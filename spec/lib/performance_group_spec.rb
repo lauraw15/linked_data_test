@@ -20,5 +20,11 @@ describe 'PerformanceGroup' do
     @foo.albums = albums
     expect(@foo.albums).to eq ["Help", "A Hard Day's Night", "Sgt. Pepper's"]
   end
+  
+  it 'prints a list of albums' do
+    albums = ["10", "11"]
+    @foo.albums=albums
+  expect(@foo.list_albums).to eq "10\n11\n"
+  end
 
 end
